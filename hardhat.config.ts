@@ -4,8 +4,11 @@ import chalk from "chalk";
 import { HardhatUserConfig } from "hardhat/config";
 import { privateKeys } from "./utils/wallets";
 
+// From https://github.com/dethcrypto/TypeChain
+import "@typechain/hardhat";
+import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-waffle";
-import "hardhat-typechain";
+
 import "solidity-coverage";
 import "hardhat-deploy";
 import "./tasks";
